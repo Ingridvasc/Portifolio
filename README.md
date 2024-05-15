@@ -11,7 +11,7 @@ The application on a personal website also presents a dashboard with graphs base
 
 ## Technologies used 🌐
 
-⇨ HTML / CSS / JS / 
+⇨ HTML / CSS / JS 
   
 # Autor ✏️
 
