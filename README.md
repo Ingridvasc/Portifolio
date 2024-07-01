@@ -6,7 +6,7 @@
 Link: https://ingridvasc.github.io/Portifolio/
 
 
-https://github.com/Ingridvasc/Portifolio/assets/97748970/ea03584f-8ff9-4181-aeff-c1d84ae896d4
+https://github.com/Ingridvasc/Portifolio/assets/97748970/84260bdb-2da5-4e24-a84a-e0ead1b6ec02
 
 
 The Portifolio is a aplication full stack web and mobile with the aim of presenting to those who see the best of the four worlds with which I work!
