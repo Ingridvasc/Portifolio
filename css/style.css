@@ -266,21 +266,6 @@ span {
     margin: .3rem 0 1rem;
 }
 
-.portifolio-layer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
-}
-
-.portifolio-layer a i {
-    font-size: 2rem;
-    color: var(--main-color);
-}
-
 .contact h2 {
     margin-bottom: 3rem;
 
