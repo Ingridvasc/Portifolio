@@ -238,8 +238,8 @@ span {
     position:absolute;
     bottom: 0;
     left: 0;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(rgb(34, 30, 32), var(--text-color));
     display: flex;
     justify-content: center;
