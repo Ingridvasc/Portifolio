@@ -226,7 +226,7 @@ span {
 }
 
 .portifolio-box img {
-    width: 50%;
+    width: 100%;
     transition: .5s ease;
 }
 
@@ -238,8 +238,8 @@ span {
     position:absolute;
     bottom: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
     background: linear-gradient(rgb(34, 30, 32), var(--text-color));
     display: flex;
     justify-content: center;
