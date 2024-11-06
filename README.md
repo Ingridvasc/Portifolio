@@ -3,9 +3,7 @@
 
 # About the Project 👇🏼
 
-Link: 
-
-
+Link: https://ingridvasc.github.io/Portifolio/
 
 The Portifolio is a aplication full stack web and mobile with the aim of presenting to those who see the best of the four worlds with which I work!
 
