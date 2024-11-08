@@ -48,7 +48,7 @@ ScrollReveal().reveal('.home-img, .services-container, .portifolio-box, .contact
 
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Full Stack Developer', 'Graphic Designer', 'Data Analyst', 'Civil Engineering'],
+    strings: ['Full Stack Developer', 'Graphic Designer', 'Data Scientist', 'Civil Engineering'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
