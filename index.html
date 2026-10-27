@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Ingrid Vasconcelos | The Five Silences</title>
+<meta name="description" content="Interactive 3D portfolio of Ingrid Vasconcelos, full-stack developer: a small RPG where each gem unlocks a part of her story.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="c" aria-label="3D game world"></canvas>
+<div id="hud"><div>INGRID Lv<span id="lv">1</span><div id="bar"><i id="xp"></i></div></div><div><div id="qs">GEMS 0/3<br>BUGS 0/6</div><button id="mu" type="button">♪ ON</button></div></div>
+<div id="tip">Move: WASD / arrows / tap · Sword: Space · Bow: F or tap a bug · M: mute · Z: zoom · Walk to the pond: a spirit waits</div>
+<div id="lab" hidden></div>
+<div id="dlg" hidden role="dialog" aria-live="polite"></div>
+<div id="mg" class="overlay" hidden></div>
+<div id="cx" hidden><button id="cxb" class="btn alt" type="button">◀ RETURN</button><span>Click a world to travel there. Visit all six.</span></div>
+<div id="title" class="overlay">
+  <div>
+    <h1>THE FIVE SILENCES</h1>
+    <p>Ingrid Vasconcelos, full-stack developer. Class: civil engineer turned software engineer. Five sciences have gone silent. Meet the pond spirit, light three gems, squash the bugs and face the Thinker at the Guild Hall. Sound on for the full experience.</p>
+    <button id="go" class="btn blink">PRESS START</button>
+  </div>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
