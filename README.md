@@ -94,7 +94,7 @@ Open `src/main.ts` and look for:
 - Ideas for later: a "Skip to resume" shortcut on the start screen, more bugs and bosses, and a mobile on-screen joystick.
 ## About me
  
-I'm **Ingrid Vasconcelos**, a full-stack developer with a civil engineering background and a focus on cybersecurity and data science. I'm looking for a tech internship or junior role.
+I'm **Ingrid Vasconcelos**, a full-stack developer with a civil engineering background and a focus on cybersecurity and data science. I'm looking for a open opportunity.
  
 - GitHub: [@Ingridvasc](https://github.com/Ingridvasc)
 - LinkedIn: [Ingrid Vasconcelos](https://www.linkedin.com/in/ingrid-vasconcelos-18635a230/)
