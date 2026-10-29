@@ -466,7 +466,7 @@ GM.phil=function(body,status,win,me){
 };
 
 /* ---------- the Cosmos: a second world behind the portal, six branches of physics linked by paths ---------- */
-var scene2=new THREE.Scene(),inCosmos=0,exitAfter=0,cxEl=document.getElementById('cx'),cur=0,path=[],seg=0,segT=0,visited={},nl=[],adj=[[],[],[],[],[],[]];
+var scene2=new THREE.Scene(),inCosmos=0,exitAfter=0,cur=0,path=[],seg=0,segT=0,visited={},nl=[],adj=[[],[],[],[],[],[]];
 scene2.background=new THREE.Color(0x03030c);scene2.add(new THREE.AmbientLight(0x9098d0,.9));
 var dl2=new THREE.DirectionalLight(0xffffff,.9);dl2.position.set(5,10,8);scene2.add(dl2);
 (function(){var a=new Float32Array(1400*3);for(var i=0;i<1400;i++){var d=new THREE.Vector3(Math.random()-.5,Math.random()-.5,Math.random()-.5).normalize().multiplyScalar(60+Math.random()*60);a[i*3]=d.x;a[i*3+1]=d.y;a[i*3+2]=d.z}
@@ -501,7 +501,7 @@ var CARD=[
  '<p>Newton’s laws hold up bridges and backends alike: load, balance, flow.</p>'+row('Back-end','Node.js, Express, Django, FastAPI, Rails, Laravel, Kafka')+row('Project','Order Management System: Backend system for laboratory order management. <a href="https://github.com/Ingridvasc/order-management-system"'+LK+'>code</a>'),
  '<p>Entropy and rainfall: patterns hide inside the noise.</p>'+row('Data','PostgreSQL, MySQL, MongoDB, Redis, ETL, advanced SQL')+row('Project','Pettitt test analysis: 43 years of rainfall (1980–2023) in the Agreste of Pernambuco, Brazil, and the shifts the test found. <a href="https://github.com/Ingridvasc/Test-of-Pettitt"'+LK+'>code</a>'),
  '<p>Light, bent and shaped, becomes the screen you touch.</p>'+row('Front-end','React, Next.js, Flutter, Material-UI, HTML5, CSS3')+row('Project','WeatherWise - Intelligent Weather Companion: A visually stunning weather experience that blends hyperlocal forecasts with your personal weather memories. <a href="https://github.com/Ingridvasc/WeatherWise-App"'+LK+'>code</a>'),
- '<p>Fields, signals and keys: what moves must be protected.</p>'+row('Security','OWASP Top 10, JWT/OAuth2, AES/RSA encryption, API hardening')+row('Project','Sistema de Detecção de Risco de Evasão com Fairness. <a href="https://github.com/Ingridvasc/Sistema-de-Deteccao-de-Risco-de-Evasao-com-Fairness"'+LK+'>code</a>'),                                                                                                                
+ '<p>Fields, signals and keys: what moves must be protected.</p>'+row('Security','OWASP Top 10, JWT/OAuth2, AES/RSA encryption, API hardening')+row('Project','Sistema de Detecção de Risco de Evasão com Fairness. <a href="https://github.com/Ingridvasc/Sistema-de-Deteccao-de-Risco-de-Evasao-com-Fairness"'+LK+'>code</a>'),
  '<p>Time bends depending on where you stand, and so do environments. Ship them all.</p>'+row('DevOps','Docker, Kubernetes, AWS, CI/CD, Git, GitHub Actions')+row('Project','Financial Market Analysis with Machine Learning: This project uses advanced Machine Learning techniques to analyze historical financial market data and generate buy/sell signals. <a href="https://github.com/Ingridvasc/Financial-market-analysis-with-machine-learning"'+LK+'>code</a>'),
  '<p>Many states at once: many languages in the same head.</p>'+row('Languages','Python, TypeScript, JavaScript, Java, R, PHP, Ruby, Rust, C#, C++')+row('Project','Quantum Option Pricing using Quantum Random Walk: This project implements a quantum random walk approach for financial option pricing using the Black-Scholes model. <a href="https://github.com/Ingridvasc/Qiskit-Fall-Fest-Quandela-1"'+LK+'>code</a>'),
 ];
@@ -514,9 +514,8 @@ function arrive(i){
 function travel(i){if(st!=='cosmos'||path.length)return;if(i===cur){arrive(i);return}path=route(cur,i);seg=0;segT=0}
 function enterCosmos(){inCosmos=1;st='cosmos';P.dest=null;keys={};lab.hidden=true;scene2.add(av);av.scale.setScalar(.22);cur=0;path=[];
   legL.rotation.x=legR.rotation.x=armL.rotation.x=armR.rotation.x=0;av.position.copy(nodePos(0));av.position.y+=1.2;
-  cxEl.hidden=false;nl.forEach(function(b){b.hidden=false});sfx.door()}
-function exitCosmos(){inCosmos=0;st='play';scene.add(av);av.scale.setScalar(.55);cxEl.hidden=true;nl.forEach(function(b){b.hidden=true})}
-document.getElementById('cxb').onclick=exitCosmos;
+  nl.forEach(function(b){b.hidden=false});sfx.door()}
+function exitCosmos(){inCosmos=0;st='play';scene.add(av);av.scale.setScalar(.55);nl.forEach(function(b){b.hidden=true})}
 var fv=new THREE.Vector3(),tv=new THREE.Vector3();
 function cosmosFrame(dt,t){
   var ca=t*.1;camera.position.set(Math.sin(ca)*27,8+Math.sin(t*.25)*2,Math.cos(ca)*27);camera.lookAt(0,0,0);
